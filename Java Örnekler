@@ -1,0 +1,29 @@
+package sorular;
+
+import java.util.Scanner;
+
+public class example_Stringabbreviation {
+    // Klavyeden girilen bir String kısaltma şu şekilde yapılır. Örneğin;
+    // Örneğin "aaabbcccd" şeklinde bir String girilmiş olsun.
+    // Ekrana a3b2c3d1 yazması gerekiyor.
+    public static void main(String[] args){
+        int say=2;
+        System.out.print("Please enter word :");
+        Scanner k= new Scanner(System.in);
+        String word= k.next();
+        for(int i=0;i<word.length()-2;i++){
+            if(word.charAt(i)==word.charAt(i+1)){
+                System.out.print(word.charAt(i));
+                  say++;
+                   System.out.print(say);
+
+                         }
+                         else if(word.charAt(i)!=word.charAt(i+1))
+                         {
+                             System.out.println(word.charAt(i+1));
+                             // yapamadım . :/
+
+            }
+        }
+    }
+}
